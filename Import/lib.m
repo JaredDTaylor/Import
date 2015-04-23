@@ -1,5 +1,5 @@
 //
-//  main.m
+//  lib.m
 //  Import
 //
 //  Created by Jared Taylor on 4/23/15.
@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#ifndef Import_lib_h
+#define Import_lib_h
 #import "lib.h"
-int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        SayHello();
-    }
-    return 0;
+
+void SayHello(){
+    NSLog(@"Hello");
 }
+#endif
